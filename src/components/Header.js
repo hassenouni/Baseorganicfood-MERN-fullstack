@@ -1,19 +1,33 @@
 import React, { Component } from "react";
-import { AppBar, Tabs, Tab } from "material-ui";
+import {connect} from "react-redux";
+import { toggleLogged } from "../actions/testActions";
+import { AppBar, FlatButton } from "material-ui";
+
+
 
 class Header extends React.Component {
   render() {
     return (
-      <AppBar title="Base Organic Food">
-        <Tabs>
-          <Tab label="Item1" />
-          <Tab label="Item2" />
-          <Tab label="Item3" />
-          <Tab label="Item4" />
-        </Tabs>
-      </AppBar>
-    );
+      <AppBar
+      title="Base Organic Food"
+      iconElementRight={<FlatButton
+       label={this.props.isLogged ? 'LOGOUT' : 'LOGIN'}
+       onClick={this.props.login}
+
+      />}
+     />
+   
+
+    )
   }
 }
 
-export default Header;
+const mapStateToProps = (state) => ({
+  isLogged: state.isLogged
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  login: () =>dispatch(toggleLogged())
+});
+
+export default connect (mapStateToProps, mapDispatchToProps)(Header);
