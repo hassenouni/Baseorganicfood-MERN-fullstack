@@ -1,5 +1,6 @@
 .flitersList {
     width: 275px;
     margin :10px 0;
-    background-color : white;
+    background-color :  #f5f5f5;
+    font-family: 'JetBrains Mono';
 }
