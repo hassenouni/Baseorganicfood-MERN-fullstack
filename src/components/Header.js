@@ -9,9 +9,10 @@ class Header extends React.Component {
   render() {
     return (
       <AppBar
+      style = {{ backgroundColor : "#ee7330"}}
       title="Base Organic Food"
       iconElementRight={<FlatButton
-       label={this.props.isLogged ? 'LOGOUT' : 'LOGIN'}
+       label={this.props.isLogged ? 'Deconnexion ' : 'Connexion '}
        onClick={this.props.login}
 
       />}
