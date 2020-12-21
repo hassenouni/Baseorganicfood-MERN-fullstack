@@ -1,5 +1,4 @@
 const path = require('path');
-
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -14,16 +13,26 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-              presets: ['env', 'react'],
-           plugins: ['transform-class-properties', 'transform-object-rest-spread']
-
+            presets: ['env', 'react'],
+            plugins: ['transform-class-properties', 'transform-object-rest-spread']
           }
         }
       },
-            
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+            }
+          }
+        ]
       }
     ]
   },
