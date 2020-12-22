@@ -24,76 +24,76 @@ class FiltersList extends React.Component {
           {/* <ListItem onClick ={this.handleClick}>
       {this.state.open ? <ExpandLess /> : <ExpandMore/>}
       </ListItem>
-      <ListItem primarytext="Nos Marques"></ListItem>
-      <ListItem primarytext="Cosmetique Bio"></ListItem>
-      <ListItem primarytext="Alimentation Bio"></ListItem>
-      <ListItem primarytext="Boisson Bio"></ListItem>
-      <ListItem primarytext="Bébé & Enfant"></ListItem>
-      <ListItem primarytext="Maison Ecologique"></ListItem>
-      <ListItem primarytext="Huile essentielle"></ListItem>
-      <ListItem primarytext="Soins Bio"></ListItem>
-      <ListItem primarytext="Santé Vitalité"></ListItem> */}
+      <ListItem primaryText="Nos Marques"></ListItem>
+      <ListItem primaryText="Cosmetique Bio"></ListItem>
+      <ListItem primaryText="Alimentation Bio"></ListItem>
+      <ListItem primaryText="Boisson Bio"></ListItem>
+      <ListItem primaryText="Bébé & Enfant"></ListItem>
+      <ListItem primaryText="Maison Ecologique"></ListItem>
+      <ListItem primaryText="Huile essentielle"></ListItem>
+      <ListItem primaryText="Soins Bio"></ListItem>
+      <ListItem primaryText="Santé Vitalité"></ListItem> */}
           <Subheader style={{ fontSize: "16px", fontWeight: "bold" }}>
             Recherché par:
           </Subheader>
           <ListItem
-            primarytext="Prix"
+            primaryText="Prix"
             open={this.state.open}
             onClick={this.handleClick}
             onNestedListToggle={this.handleNestedListToggle}
             nestedItems={[
               <ListItem
                 key={1}
-                primarytext="< 10 € "
+                primaryText="< 10 € "
                 leftCheckbox={<Checkbox />}
               />,
               <ListItem
                 key={1}
-                primarytext="< 10 € - 25 € "
+                primaryText="< 10 €-25 € "
                 leftCheckbox={<Checkbox />}
               />,
               <ListItem
                 key={1}
-                primarytext="< 25 € - 50 € "
+                primaryText="< 25 €-y50 € "
                 leftCheckbox={<Checkbox />}
               />,
               <ListItem
                 key={1}
-                primarytext="> 100 € "
+                primaryText="> 100 € "
                 leftCheckbox={<Checkbox />}
               />,
             ]}
           />
 
           <ListItem
-            primarytext="Nos Marques"
+            primaryText="Nos Marques"
             open={this.state.open}
             onClick={this.handleClick}
             onNestedListToggle={this.handleNestedListToggle}
             nestedItems={[
               <ListItem
                 key={1}
-                primarytext="123 Nous Irons au Bois "
+                primaryText="123 Nous Irons au Bois "
                 leftCheckbox={<Checkbox />}
               />,
               <ListItem
                 key={1}
-                primarytext="Aagaard"
+                primaryText="Aagaard"
                 leftCheckbox={<Checkbox />}
               />,
               <ListItem
                 key={1}
-                primarytext="Beliflor"
+                primaryText="Beliflor"
                 leftCheckbox={<Checkbox />}
               />,
               <ListItem
                 key={1}
-                primarytext="Bio Idea"
+                primaryText="Bio Idea"
                 leftCheckbox={<Checkbox />}
               />,
               <ListItem
                 key={1}
-                primarytext="Florame"
+                primaryText="Florame"
                 leftCheckbox={<Checkbox />}
               />,
             ]}
