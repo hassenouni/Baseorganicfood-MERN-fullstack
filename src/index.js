@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { Provider } from "react-redux";
 import ShoppingCart from './components/ShoppingCart';
 import testReducer from './reducers/testReducer';
+import filtersReducer from './reducers/filtersReducer';
 
+const store = createStore(combineReducers({
+     
+     test: testReducer,
+     productsFilters: filtersReducer
+}));
 
-const store = createStore(testReducer);
 ReactDOM.render(<Provider store={store}><ShoppingCart/></Provider>, document.getElementById('app_root'));
