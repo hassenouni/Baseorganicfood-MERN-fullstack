@@ -11,11 +11,12 @@ let initialFiltersState = {
     Santé_Vitalité: [],
     Maison_Ecologique: []
 
-}
+};
 
 const filtersReducer = (state = initialFiltersState, action) => {
   switch (action.type) {
       case 'SET_FILTER':
+      console.log(state)
       state[action.filterType].push(action.filter);
       return {
           ...state
