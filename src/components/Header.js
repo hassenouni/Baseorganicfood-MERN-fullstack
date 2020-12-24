@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { toggleLogged } from "../actions/testActions";
 import { AppBar, FlatButton } from "material-ui";

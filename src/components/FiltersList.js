@@ -18,8 +18,7 @@ const styles = {
 class FiltersList extends React.Component {
   
   handleCheck = (e) => {
-    console.log(e.target.name);
-    console.log(e.target.value);
+    
     this.props.setFilter(e.target.name, e.target.value);
 
   };
@@ -71,19 +70,19 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="123 Nous Irons au Bois "
-                 name="Nos Marques" value="123 Nous Irons au Bois" onCheck={this.handleCheck} 
+                 name="Nos_Marques" value="123 Nous Irons au Bois" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Aagaard"
-                 name="Nos Marques" value="Aagaard" onCheck={this.handleCheck} 
+                 name="Nos_Marques" value="Aagaard" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Beliflor"
-                 name="Nos Marques" value="Beliflor" onCheck={this.handleCheck} 
+                 name="Nos_Marques" value="Beliflor" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Bio Idea"
-                 name="Nos Marques" value="Bio Idea" onCheck={this.handleCheck} 
+                 name="Nos_Marques" value="Bio Idea" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="FloBébé & Enfante"
-                 name="Nos Marques" value="FloBébé & Enfante" onCheck={this.handleCheck} 
+                 name="Nos_Marques" value="FloBébé & Enfante" onCheck={this.handleCheck} 
               />,
             ]}
           />
@@ -113,10 +112,10 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="Beauté Visage Naturel"
-                 name="Cosmetique Bio" value="Beauté Visage Naturel" onCheck={this.handleCheck} 
+                 name="Cosmetique_Bio" value="Beauté Visage Naturel" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Beauté Bio Corps"
-                 name="Cosmetique Bio" value="Beauté Bio Corps" onCheck={this.handleCheck} 
+                 name="Cosmetique_Bio" value="Beauté Bio Corps" onCheck={this.handleCheck} 
               />,
             ]}
           />
@@ -128,13 +127,13 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="Epicerie sucrée"
-                 name="Alimentation Bio" value="Epicerie sucrée" onCheck={this.handleCheck} 
+                 name="Alimentation_Bio" value="Epicerie sucrée" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Epicerie salée"
-                 name="Alimentation Bio" value="Epicerie salée" onCheck={this.handleCheck} 
+                 name="Alimentation_Bio" value="Epicerie salée" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Cuisine du monde"
-                 name="Alimentation Bio" value="Cuisine du monde" onCheck={this.handleCheck} 
+                 name="Alimentation_Bio" value="Cuisine du monde" onCheck={this.handleCheck} 
               />,
             ]}
           />
@@ -146,16 +145,16 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="Alimentation Bébé Bio"
-                 name="Bébé & Enfant" value="Alimentation Bébé Bio" onCheck={this.handleCheck} 
+                 name="Bébé_Enfant" value="Alimentation Bébé Bio" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Lait Infantile"
-                 name="Bébé & Enfant" value="Lait Infantile" onCheck={this.handleCheck} 
+                 name="Bébé_Enfant" value="Lait Infantile" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="toilette Bébé Bio"
-                 name="Bébé & Enfant" value="toilette Bébé Bio" onCheck={this.handleCheck} 
+                 name="Bébé_Enfant" value="toilette Bébé Bio" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="couche bio jetable"
-                 name="Bébé & Enfant" value="couche bio jetable" onCheck={this.handleCheck} 
+                 name="Bébé_Enfant" value="couche bio jetable" onCheck={this.handleCheck} 
               />,
             ]}
           />
@@ -166,13 +165,13 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="Jus de fruit Bio"
-                 name="Boisson Bio" value="Jus de fruit Bio" onCheck={this.handleCheck} 
+                 name="Boisson_Bio" value="Jus de fruit Bio" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Jus de légumes Bio"
-                 name="Boisson Bio" value="Jus de légumes Bio" onCheck={this.handleCheck} 
+                 name="Boisson_Bio" value="Jus de légumes Bio" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="café bio"
-                 name="Boisson Bio" value="café bio" onCheck={this.handleCheck} 
+                 name="Boisson_Bio" value="café bio" onCheck={this.handleCheck} 
               />,
             ]}
           />
@@ -184,13 +183,13 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="Huile essentielle Bio"
-                 name="Huile essentielle" value="Huile essentielle Bio" onCheck={this.handleCheck} 
+                 name="Huile_essentielle" value="Huile essentielle Bio" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Peaux & Cheveux"
-                 name="Huile essentielle" value="Peaux & Cheveux" onCheck={this.handleCheck} 
+                 name="Huile_essentielle" value="Peaux & Cheveux" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Antiviral"
-                 name="Huile essentielle" value="Antiviral" onCheck={this.handleCheck} 
+                 name="Huile_essentielle" value="Antiviral" onCheck={this.handleCheck} 
               />,
             ]}
           />
@@ -202,13 +201,13 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="Articulation Bio"
-                 name="Santé Vitalité" value="Articulation Bio" onCheck={this.handleCheck} 
+                 name="Santé_Vitalité" value="Articulation Bio" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Cardio-vasculaire Bio"
-                 name="Santé Vitalité" value="Cardio-vasculaire Bio" onCheck={this.handleCheck} 
+                 name="Santé_Vitalité" value="Cardio-vasculaire Bio" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Minceur"
-                 name="Santé Vitalité" value="Minceur" onCheck={this.handleCheck} 
+                 name="Santé_Vitalité" value="Minceur" onCheck={this.handleCheck} 
               />,
             ]}
           />
@@ -220,13 +219,13 @@ class FiltersList extends React.Component {
             primaryTogglesNestedList={true}
             nestedItems={[
               <Checkbox style = {styles.checkbox} label="Produit d'entretien écologique"
-                 name="Maison Ecologique" value="Produit d'entretien écologique" onCheck={this.handleCheck} 
+                 name="Maison_Ecologique" value="Produit d'entretien écologique" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Droguerie écologique"
-                 name="Maison Ecologique" value="Droguerie écologique" onCheck={this.handleCheck} 
+                 name="Maison_Ecologique" value="Droguerie écologique" onCheck={this.handleCheck} 
               />,
               <Checkbox style = {styles.checkbox} label="Entretien linge écologique"
-                 name="Maison Ecologique" value="Entretien linge écologique" onCheck={this.handleCheck} 
+                 name="Maison_Ecologique" value="Entretien linge écologique" onCheck={this.handleCheck} 
               />,
             ]}
           />
