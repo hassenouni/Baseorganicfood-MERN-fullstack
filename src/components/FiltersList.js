@@ -8,6 +8,16 @@ import "../styles/FiltersList.css";
 
 
 const styles = {
+           
+        subheader : {
+           fontSize: '16px',
+           fontWeight: 'bold'
+        },
+      
+   listItem :{
+      borderTop: '1px solid #dcdcdc'
+   },
+
   checkbox : {
     marginLeft: 20
   }
@@ -39,10 +49,11 @@ class FiltersList extends React.Component {
       <ListItem primaryText="Huile essentielle"></ListItem>
       <ListItem primaryText="Soins Bio"></ListItem>
       <ListItem primaryText="Santé Vitalité"></ListItem> */}
-          <Subheader style={{ fontSize: "16px", fontWeight: "bold" }}>
+          <Subheader style={styles.subheader}>
             Recherché par:
           </Subheader>
           <ListItem
+            style = {styles.listItem}
             primaryText="Prix"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -64,6 +75,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Nos Marques"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -88,6 +100,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Color"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -106,6 +119,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Cosmetique Bio"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -121,6 +135,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Alimentation Bio"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -139,6 +154,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Bébé & Enfant"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -159,6 +175,7 @@ class FiltersList extends React.Component {
             ]}
           />
           <ListItem
+            style = {styles.listItem}
             primaryText="Boisson Bio"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -177,6 +194,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Huile essentielle"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -195,6 +213,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Santé Vitalité"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
@@ -213,6 +232,7 @@ class FiltersList extends React.Component {
           />
 
           <ListItem
+            style = {styles.listItem}
             primaryText="Maison Ecologique"
             hoverColor={'#ee7330'}
             initiallyOpen={false}
