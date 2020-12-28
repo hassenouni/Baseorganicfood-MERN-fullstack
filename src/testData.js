@@ -8,7 +8,7 @@ info :  {
       Poids: '200g',
       Spécificité : 'Huile',
       Usage : 'Peau séche' ,
-      photo : './img/dentifrice-ayurvedique-au-meswak.jpg'
+      photo : '/img/dentifrice-ayurvedique-au-meswak.jpg'
 
   },
 
@@ -30,7 +30,7 @@ info :  {
       Poids: '300g',
       Spécificité: 'Lait',
       Usage : 'visage',
-      photo : './img/huile.jpg'
+      photo : '/img/huile.jpg'
 
   },
 
@@ -51,7 +51,7 @@ info :  {
       Poids : '500g',
       Spécificité : 'créme',
       Usage : 'corps',
-      photo : './img/huile-de-coco-400ml-vierge.jpg'
+      photo : '/img/huile-de-coco-400ml-vierge.jpg'
 
   },
   tags :{

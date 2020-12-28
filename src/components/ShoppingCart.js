@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Header from "./Header" ;
 import Homepage from "./Homepage";
-import ProductDetails from "./ProductsDetails";
+import ProductDetails from "./ProductDetails";
 import "../styles/ShoppingCart.css";
 
 
